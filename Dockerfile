@@ -1,4 +1,4 @@
-FROM debian:wheezy
+FROM phusion/baseimage
 
 RUN apt-get update -qq && \
     apt-get -qqy install samba && \
