@@ -25,7 +25,7 @@ dns proxy = no
 syslog only = yes
 server role = standalone server
 security = share
-guest account = nobody
+guest account = ${cifsuser:-nobody}
 map to guest = bad user
 EOF
 
@@ -63,8 +63,8 @@ while [[ $# -gt 0 ]]; do
    path = $path
    read only = $read_only
 
-   force user = docker-user
-   force group = docker-group
+   force user = ${cifsuser:-docker-user}
+   force group = ${cifsgroup:-docker-group}
 EOF
 done
 
