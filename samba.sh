@@ -24,7 +24,6 @@ netbios name = $netbios_name
 dns proxy = no
 syslog only = yes
 server role = standalone server
-security = share
 guest account = ${cifsuser:-nobody}
 map to guest = bad user
 EOF
