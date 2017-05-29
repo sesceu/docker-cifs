@@ -62,6 +62,7 @@ while [[ $# -gt 0 ]]; do
 
    path = $path
    read only = $read_only
+   public = yes
 
    force user = ${cifsuser:-docker-user}
    force group = ${cifsgroup:-docker-group}
