@@ -25,6 +25,7 @@ dns proxy = no
 syslog only = yes
 server role = standalone server
 guest account = ${cifsuser:-nobody}
+security = user
 map to guest = bad user
 EOF
 
